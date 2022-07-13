@@ -28,7 +28,7 @@ const defaultMenu = {
 └─────┈ ⳹ ❋ཻུ۪۪⸙
 %readmore
 `.trimStart(),
-  header: '┌─ ⳹°❀❬ %category ❭❀°───ꕥ ',
+  header: '┌──── ⳹°❀❬ %category ❭❀°────┈ꕥ ',
   body: '│✎ %cmd %islimit %isPremium',
   footer: '└────────━⃝┅⃝━──────┈ ⳹ ❋ཻུ۪۪⸙\n',
   after: `%c4 %me`,
@@ -165,102 +165,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
     '': 'No Category'
   }
   try {
-  	// DEFAULT MENU
-      let dash = global.dashmenu
-  	let m1 = global.dmenut
-      let m2 = global.dmenub
-      let m3 = global.dmenuf
-      let m4 = global.dmenub2
-      
-      // COMMAND MENU
-      let cc = global.cmenut
-      let c1 = global.cmenuh
-      let c2 = global.cmenub
-      let c3 = global.cmenuf
-      let c4 = global.cmenua
-      
-      // LOGO L P
-      let lprem = global.lopr
-      let llim = global.lolm
-      let tag = `@${m.sender.split('@')[0]}`
-    
-    let _mpt
-    if (process.send) {
-      process.send('uptime')
-      _mpt = await new Promise(resolve => {
-        process.once('message', resolve)
-        setTimeout(resolve, 1000)
-      }) * 1000
-    }
-    let mpt = clockString(_mpt)
-      const sections = [
-   {
-	title: `${htki} MAIN ${htka}`,
-	rows: [
-	    {title: `⚡ ${pmenus} SPEED BOT`, rowId: ".ping", description: "Menampilkan kecepatan respon BOT"},
-	    {title: `💌 ${pmenus} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
-	    {title: `📔 ${pmenus} SCRIPT BOT`, rowId: ".sc", description: `Source Code`},
-	]
-    },{
-	title: `${htki} SUPPORT ${htka}`,
-	rows: [
-	    {title: `🔖 ${pmenus} SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
-	    {title: `🌟 ${pmenus} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
-	    {title: `💹 ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
-	]
-	},{
-	title: `${htki} MENU ${htka}`,
-	rows: [
-	    {title: `💬 ${pmenus} All`, rowId: ".? all", description: "Menampilkan Semua command BOT"},
-	    {title: `🌱 ${pmenus} Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
-	{title: `✨ ${pmenus} Exp`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
-	{title: `🎮 ${pmenus} Game`, rowId: ".? game", description: "Gamenya seru seru lho >-<"},
-	{title: `🧩 ${pmenus} Fun`, rowId: ".? fun", description: "Fitur yang aman untuk keluarga"},
-	{title: `🐚 ${pmenus} Kerang`, rowId: ".? kerangajaib", description: "Tanyakan pada ketua club"},
-	{title: `📑 ${pmenus} Quotes`, rowId: ".? quotes", description: "Random Inspirasi"},
-	{title: `⛩️ ${pmenus} Anime`, rowId: ".? anime", description: "Kamu wibu ya bang?"},
-	{title: `🔞 ${pmenus} Nsfw`, rowId: ".? nsfw", description: "Tch, dasar sagne"},
-	{title: `🌟 ${pmenus} Premium`, rowId: ".? premium", description: "Only premium Users"},
-	{title: `🎭 ${pmenus} Anonymous Chats`, rowId: ".? anonymous", description: "Bicara dengan orang tidak dikenal"},
-	{title: `📖 ${pmenus} Al-Quran`, rowId: ".? quran", description: "Tobat yuk kak"},
-	{title: `🌎 ${pmenus} Internet`, rowId: ".? internet", description: "Cari sesuatu diBOT"},
-	{title: `📩 ${pmenus} Downloaders`, rowId: ".? downloader", description: "Download sesuatu diBOT"},
-	{title: `🎨 ${pmenus} Stikers`, rowId: ".? stiker", description: "Buat Sticker diBOT"},
-	{title: `✏️ ${pmenus} Nulis`, rowId: ".? nulis", description: "Nulis kok males kak?"},
-	{title: `🎧 ${pmenus} Audio`, rowId: ".? audio", description: "Ubah Audio dengan Filter"},
-	{title: `🏢 ${pmenus} Group`, rowId: ".? group", description: "Only Groups"},
-	{title: `👑 ${pmenus} Admin`, rowId: ".? admin", description: "Only Admin Group"},
-	{title: `🗂️ ${pmenus} Database`, rowId: ".? database", description: "Simpan sesuatu diBOT"},
-	{title: `🛠️ ${pmenus} Tools`, rowId: ".? tools", description: "Mungkin tools ini bisa membantu?"},
-	{title: `ℹ️ ${pmenus} Info`, rowId: ".? info", description: "Info info BOT"},
-	{title: `👩‍💻 ${pmenus} Owner`, rowId: ".? owner", description: "Owner Only!"},
-	{title: `❓ ${pmenus} No Category`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
-	]
-  },
-]
-
-let usrs = db.data.users[m.sender]
-let tek = `*${ucapan()} ${conn.getName(m.sender)}*
-┏─── ⳹°❀❬ HAORI MD ❭❀°
-│✎ _Aktif Selama:_ ${mpt}
-│✎ _Jam:_ ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
-│✎ _User:_ ${Object.keys(global.db.data.users).length}
-│✎ _Level:_ ${usrs.level}
-┗──────┈ ⳹ ❋ཻུ۪۪⸙
-`
-const listMessage = {
-  text: tek,
-  footer: '© Putbotz',
-  mentions: await conn.parseMention(tek),
-  title: `${htki} *LIST MENU* ${htka}`,
-  buttonText: `CLICK HERE ⎙`,
-  sections
-}
-  if (teks == '404') {
-  	return conn.sendMessage(m.chat, listMessage, { quoted: m, mentions: await conn.parseMention(tek), contextInfo:{ forwardingScore: 99999, isForwarded: true }})
-    }
-  	
- /**************************** TIME *********************/
+  	/**************************** TIME *********************/
  let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
     let wibh = moment.tz('Asia/Jakarta').format('HH')
     let wibm = moment.tz('Asia/Jakarta').format('mm')
@@ -269,7 +174,7 @@ const listMessage = {
     let wita = moment.tz('Asia/Makassar').format('HH:mm:ss')
     let wktuwib = `${wibh} H ${wibm} M ${wibs} S`
  
- let mode = global.opts['self'] ? 'Private' : 'Publik'
+ 
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
     let { age, exp, limit, level, role, registered, money} = global.db.data.users[m.sender]
     let { min, xp, max } = xpRange(level, global.multiplier)
@@ -317,6 +222,123 @@ const listMessage = {
     let uptime = clockString(_uptime)
     //---------------------
     
+  	// DEFAULT MENU
+      let dash = global.dashmenu
+  	let m1 = global.dmenut
+      let m2 = global.dmenub
+      let m3 = global.dmenuf
+      let m4 = global.dmenub2
+      let mode = global.opts['self'] ? 'Private' : 'Publik'
+      let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
+  
+      // COMMAND MENU
+      let cc = global.cmenut
+      let c1 = global.cmenuh
+      let c2 = global.cmenub
+      let c3 = global.cmenuf
+      let c4 = global.cmenua
+      
+      // LOGO L P
+      let lprem = global.lopr
+      let llim = global.lolm
+       let tag = `@${m.sender.split('@')[0]}`
+       let ow = `@${'16199961931'.split('@')[0]}`
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+    
+    let _mpt
+    if (process.send) {
+      process.send('uptime')
+      _mpt = await new Promise(resolve => {
+        process.once('message', resolve)
+        setTimeout(resolve, 1000)
+      }) * 1000
+    }
+    let mpt = clockString(_mpt)
+      const sections = [
+   {
+	title: `${htki} SUPPORT ${htka}`,
+	rows: [
+	    {title: `⚡ › SPEED BOT`, rowId: ".ping", description: "Menampilkan kecepatan respon BOT"},
+	    {title: `💌 › OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
+	    {title: `📔 › SCRIPT BOT`, rowId: ".sc", description: `Source Code`},
+	]
+	},{
+	title: `${htki} MENU ${htka}`,
+	rows: [
+	    { title: '💬 ꒱「  ❖ Semua Perintah ⤸ 」',  description: 'Menampilkan semua fitur dari bot', rowId: '.? all' }, 
+           { title: '🎮 ꒱「  ❖ Game ⤸ 」', description: 'Menampilkan fitur dari game', rowId: '.? game' }, 
+           { title: '🌱 ꒱「  ❖ RPG ⤸ 」', description: 'Menampilkan fitur dari rpg', rowId: '.? stiker' }, 
+           { title: '📈 ꒱「  ❖ Exp & Limit ⤸ 」', description: 'Menampilkan fitur dari xp', 'rowId': '.? xp' }, 
+           { title: '🎫 ꒱「  ❖ Stiker ⤸ 」', description: 'Menampilkan fitur dari sticker', rowId: '.? stiker' }, 
+           { title: '🐚 ꒱「  ❖ Kerang Ajaib ⤸ 」', description: 'Menampilkan fitur dari kerang ajaib', rowId: '.? kerangajaib' }, 
+           { title: '📑 ꒱「  ❖ Quotes ⤸ 」', description: 'Menampilkan fitur dari quotes', rowId: '.? quotes' }, 
+           { title: '🏦 ꒱「  ❖ Group Settings  ⤸ 」', description: 'Menampilkan fitur dari grup', rowId: '.? grup' }, 
+           { title: '🌟 ꒱「  ❖ Premium ⤸ 」', description: 'Menampilkan fitur dari premium', rowId: '.? premium' }, 
+           { title: '💻 ꒱「  ❖ Internet ⤸ 」', description: 'Menampilkan fitur dari internet', rowId: '.? internet' }, 
+           { title: '🎭 ꒱「  ❖ Anonymous Chat ⤸ 」', description: 'Menampilkan fitur dari anonymous', rowId: '.? anonymous' }, 
+           { title: '✍️ ꒱「  ❖ Editz Menu ⤸ 」', description: 'Menampilkan fitur dari nulis', rowId: '.? nulis' }, 
+           { title: '📩 ꒱「  ❖ Downloader ⤸ 」', description: 'Menampilkan fitur dari downloader', rowId: '.? downloader' }, 
+           { title: '🧰 ꒱「  ❖ Tools ⤸ 」', description: 'Menampilkan fitur dari tools', rowId: '.? tools' }, 
+           { title: '🧩 ꒱「  ❖ Fun ⤸ 」', description: 'Menampilkan fitur dari fun', rowId: '.? fun' }, 
+           { title: '📂 ꒱「  ❖ Data Base ⤸ 」', description: 'Menampilkan fitur dari database', rowId: '.? database' }, 
+           { title: '🗳️ ꒱「  ❖ Vote & Absen ⤸ 」', description: 'Menampilkan fitur dari vote', rowId: '.? vote'  }, 
+           { title: '☪️ ꒱「  ❖ Islamic ⤸ 」', description: 'Menampilkan fitur dari quran', rowId: '.? quran' }, 
+           { title: '🎙️ ꒱「  ❖ Voice Changer ⤸ 」', description: 'Menampilkan fitur dari pengubah suara', rowId: '.? audio' }, 
+           { title: '🎧 ꒱「  ❖ Vn Imuet ⤸ 」', description: 'Menampilkan fitur dari vn',  rowId: '.? vn' }, 
+           { title: '🎵 ꒱「  ❖ Sound Music ⤸ 」', description: 'Menampilkan fitur dari sound',  rowId: '.? sound' }, 
+           { title: '🤖 ꒱「  ❖ Jadibot ⤸ 」', description: 'Menampilkan fitur dari jadibot',  rowId: '.? jadibot' }, 
+           { title: 'ℹ️ ꒱「  ❖ Info ⤸ 」', description: 'Menampilkan fitur dari info', rowId: '.? info'}, 
+           { title: '❓ ꒱「  ❖ No Category ⤸ 」', description: 'Menampilkan fitur dari tanpakategori', rowId: '.? tanpakategori' }, 
+           { title: '👩🏻‍💻 ꒱「  ❖ Owner ⤸ 」', description: 'Menampilkan fitur dari owner', rowId: '.? owner' },
+]
+	},{
+	title: `${htki} MAIN ${htka}`,
+	rows: [
+	    {title: `🔖 › SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
+	    {title: `🌟 › BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
+	    {title: `💹 › DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
+	]
+  },
+]
+
+let usrs = db.data.users[m.sender]
+let tek = `*${ucapan()}, ${tag}*
+
+╭⃝───────────────┈ ⳹ 
+│╭┈─────────────⩵꙰ཱི࿐
+│╰─━⃝┅❲ *INFO - BOT* ❳┅⃝━
+│✎ _Aktif Selama:_ ${mpt}
+│✎ User: ${Object.keys(global.db.data.users).length}
+│✎ Library: Baileys-Md
+│✎ Baterai : ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 Pengisian' : ''}` : '❓ Tidak Diketahui'}
+│✎ Prefix : [ Multi Prefix ]
+│✎ Owner : ${ow}
+│✎ Mode : ${mode}
+│✎ Runtime: ${uptime}
+│✎ Bot Name : ${conn.user.name}
+│✎ Name Owner: Zivfurr & Haori
+│
+│╭┈─────────────⩵꙰ཱི࿐
+│╰━⃝┅❲ *TIME - INFO* ❳┅⃝━
+│◦〉 Weton : *${weton}*
+│◦〉 Tanggal : *${date}*
+│◦〉 Waktu : *${time}* 
+│◦〉 Jam: ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
+│◦〉 Islam : *${dateIslamic}*
+╰•─────━⃝┅⃝━────═┅━–┈ ⳹
+`
+const listMessage = {
+  text: tek,
+  footer: '📮 Note : Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.',
+  mentions: await conn.parseMention(tek),
+  title: `${htki} *LIST MENU* ${htka}`,
+  buttonText: `CLICK HERE ⎙`,
+  sections
+}
+  if (teks == '404') {
+  	return conn.sendMessage(m.chat, listMessage, { quoted: fkon, mentions: await conn.parseMention(tek), contextInfo:{ forwardingScore: 99999, isForwarded: true }})
+    }
+  	
     let totalreg = Object.keys(global.db.data.users).length
     let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
     let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(plugin => {
@@ -418,8 +440,7 @@ const listMessage = {
                          }
                         }
                      }
-  let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
-  
+
     const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
     
     //------------------< MENU >----------------
@@ -495,8 +516,8 @@ const listMessage = {
         //await conn.sendMessage(m.chat, message, m, { mentionedJid: [m.sender] })
         
     //------------------- BUTTON VID
-    conn.sendButton(m.chat, text, wm, 'https://telegra.ph/file/ab9e499626a414f302e6a.mp4', [['Ping', '.ping'],['Owner', '.owner'],['Donasi', '.donasi']], ftoko, { gifPlayback: true, contextInfo: { externalAdReply: {title: namebot, body: bottime, sourceUrl: sig, thumbnail: await (await fetch('https://telegra.ph/file/6a0f08e001641935c4725.jpg')).buffer()}}})
-    
+    conn.sendButton(m.chat, text, wm, 'https://telegra.ph/file/ab9e499626a414f302e6a.mp4', [['Ping', '.ping'],['Owner', '.owner'],['Donasi', '.donasi']], ftoko, { gifPlayback: true, contextInfo: { forwardingScore: 99999, isForwarded: true, externalAdReply: { mediaUrl: `${pickRandom([`https://www.facebook.com/Inunime-107082474576049/`,`https://youtu.be/JWHV8lPTzPs`])}`, title: namebot, body: bottime, mediaType: 2,  description:  '', sourceUrl: sig, thumbnail: await (await fetch('https://telegra.ph/file/6a0f08e001641935c4725.jpg')).buffer(),}}})
+ 
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
