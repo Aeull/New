@@ -61,7 +61,7 @@ global.psaweria = 'gaada'
 /*============== NOMOR ==============*/
 global.nomorbot = '6285158866902'
 global.nomorown = '6285158866902'
-global.namebot = 'Sasyi'
+global.namebot = 'HAORI IQ-MD'
 global.nameown = 'Ziv San'
 
 
@@ -115,7 +115,7 @@ global.APIKeys = { // APIKey Here
 
 /*============== WATERMARK ==============*/
 //GANTI SETERAH MU
-global.wm = '\n© 𝙷𝚊𝚘𝚛𝚒𝚋𝚘𝚝𝚣 🐾'' //Main Watermark
+global.wm = '\n© 𝙷𝚊𝚘𝚛𝚒𝚋𝚘𝚝𝚣 🐾' //Main Watermark
 global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘Ħασɾι - chαn˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
 global.wm3 = '⫹⫺Haori By Ziv San'
 global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}`
