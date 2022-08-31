@@ -46,30 +46,30 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
 global.sig = 'https://instagram.com/sahrulwara_____'
 global.sgh = 'https://github.com/Warikrr'
-global.sgc = 'https://chat.whatsapp.com/Kyz397uqvJZ5AvX7I4BSID'
-global.sdc = 'https://discord.gg/WEJQjugTY7'
-global.snh = 'https://nhentai.net/g/365296/'
+global.sgc = 'https://chat.whatsapp.com/ItwCvXL02hg11U5qNaLSBe'
+global.sdc = 'https://youtu.be/Y4lDHozWsnI'
+global.snh = 'https://youtu.be/4cQwSCtZo1Q'
 
 /*============== PAYMENT ==============*/
-global.pdana = 'gaada'
+global.pdana = '085822347348'
 global.povo = 'gaada'
 global.pgopay = 'gaada'
-global.ppulsa = '6285158866902 maxis'
-global.ppulsa2 = '6285158866902 maxis'
+global.ppulsa = '085822347348 Indosat'
+global.ppulsa2 = '083843192208 Axis'
 global.psaweria = 'gaada'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '6285158866902'
-global.nomorown = '6285158866902'
-global.namebot = 'HAORI IQ-MD'
-global.nameown = 'Ziv San'
+global.nomorbot = '6283843192208'
+global.nomorown = '6285822347348'
+global.namebot = 'ArullBotz'
+global.nameown = 'Arull'
 
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6285158866902'],
-  ['6285158866902'],
-  ['6285158866902', 'Ziv San', true]
+  ['6285822347348'],
+  ['6285822347348'],
+  ['6285822347348', 'Arull', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -115,20 +115,20 @@ global.APIKeys = { // APIKey Here
 
 /*============== WATERMARK ==============*/
 //GANTI SETERAH MU
-global.wm = '\n© 𝙷𝚊𝚘𝚛𝚒𝚋𝚘𝚝𝚣 🐾' //Main Watermark
-global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘Ħασɾι - chαn˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
-global.wm3 = '⫹⫺Haori By Ziv San'
+global.wm = '\n© ArullBotz ' //Main Watermark
+global.wm2 = 'ArullBotz'
+global.wm3 = '⫹⫺ArullBotz By Arull'
 global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘Ħασɾι - chαn˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
-global.author = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘Ħασɾι - chαn˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
+global.titlebot = 'ArullBotz'
+global.author = 'ArullBotz'
 
 
 /*============== LOGO ==============*/
 // INI JUGA GANTI SETERAH MU
-global.thumb = 'https://telegra.ph/file/c73f47b440241b66cb9d3.jpg' //Main Thumbnail
-global.thumb2 = 'https://telegra.ph/file/c73f47b440241b66cb9d3.jpg'
-global.thumbbc = 'https://telegra.ph/file/d389f4acafac741f6592c.jpg' //For broadcast
+global.thumb = 'https://telegra.ph/file/6ac3aa85461a2421d7f30.jpg' //Main Thumbnail
+global.thumb2 = 'https://telegra.ph/file/6ac3aa85461a2421d7f30.jpg'
+global.thumbbc = 'https://telegra.ph/file/6ac3aa85461a2421d7f30.jpg' //For broadcast
 global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
@@ -175,7 +175,7 @@ global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============== STICKER WM ==============*/
 global.stickpack = 'MANA SUARA NYA EHEK'
-global.stickauth = `© HAORI IQ-MD`
+global.stickauth = `© ArullBotz`
 
 global.multiplier = 999 // The higher, The harder levelup
 
